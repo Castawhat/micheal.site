@@ -6,10 +6,12 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    flex-direction: column; /* Allows footer to be positioned correctly */
 }
 
 .container {
     text-align: center;
+    margin-bottom: 20px; /* Adjust spacing */
 }
 
 .logo {
@@ -51,4 +53,25 @@ h1 {
 
 .button:hover {
     background-color: #0056b3;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #00aaff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
 }
