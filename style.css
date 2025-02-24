@@ -54,24 +54,3 @@ h1 {
 .button:hover {
     background-color: #0056b3;
 }
-
-.footer {
-    background-color: #d3d3d3; /* Light grey background */
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer a {
-    color: #00aaff;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-}
