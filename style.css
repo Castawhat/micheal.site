@@ -3,15 +3,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Change from height to min-height */
+    height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
     flex-direction: column; /* Allows footer to be positioned correctly */
 }
 
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     text-align: center;
-    margin-bottom: 20px; /* Adjust spacing */
+    margin: 0; /* Adjust spacing */
+    padding-top: 20px; /* Optional: Add some top padding */
 }
 
 .logo {
