@@ -1,16 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Change from height to min-height */
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-    flex-direction: column; /* Allows footer to be positioned correctly */
 }
 
 html, body {
-    height: 100%; /* Ensure the body takes the full height */
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -56,12 +54,13 @@ html, body {
 
 .container {
     text-align: center;
-    margin-top: 80px; /* Adjust spacing for header */
+    margin-top: 80px; /* Adjust for header */
+    flex-grow: 1; /* Ensure it takes available space */
 }
 
 .logo {
     display: block;
-    margin: 0 auto 20px;
+    margin: 20px auto;
     max-width: 200px;
 }
 
@@ -92,8 +91,8 @@ h1 {
     background-color: #9698fe;
     border: none;
     border-radius: 10px;
-    width: 400px; /* Set a fixed width for even size */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    width: 400px;
+    box-sizing: border-box;
 }
 
 .button:hover {
@@ -101,11 +100,9 @@ h1 {
 }
 
 .footer {
-    background-color: #d3d3d3; /* Light grey background */
+    background-color: #d3d3d3;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -123,25 +120,11 @@ h1 {
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
-    body {
-        min-height: auto; /* Change from height to auto */
-        padding: 20px;
-    }
-    
-    .container {
-        width: 100%;
-    }
-    
-    .button-container {
-        width: 100%;
-    }
-    
     .button {
-        width: 90%; /* Adjust button width for mobile */
+        width: 90%;
     }
     
     .footer {
-        position: relative; /* Change to relative for better mobile positioning */
         padding: 15px;
     }
 }
