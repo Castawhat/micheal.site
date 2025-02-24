@@ -75,3 +75,28 @@ h1 {
     height: 24px;
     margin: 0 5px;
 }
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    .button-container {
+        width: 100%;
+    }
+    
+    .button {
+        width: 90%; /* Adjust button width for mobile */
+    }
+    
+    .footer {
+        position: relative; /* Change to relative for better mobile positioning */
+        padding: 15px;
+    }
+}
