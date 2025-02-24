@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Change from height to min-height */
     margin: 0;
     background-color: #f0f0f0;
     flex-direction: column; /* Allows footer to be positioned correctly */
@@ -79,7 +79,7 @@ h1 {
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
     body {
-        height: auto;
+        min-height: auto; /* Change from height to auto */
         padding: 20px;
     }
     
