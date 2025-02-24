@@ -9,16 +9,9 @@ body {
     flex-direction: column; /* Allows footer to be positioned correctly */
 }
 
-html, body {
-    height: 100%; /* Ensure the body takes the full height */
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     text-align: center;
-    margin: 0; /* Adjust spacing */
-    padding-top: 20px; /* Optional: Add some top padding */
+    margin-bottom: 20px; /* Adjust spacing */
 }
 
 .logo {
@@ -81,29 +74,4 @@ h1 {
     width: 24px;
     height: 24px;
     margin: 0 5px;
-}
-
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
-    body {
-        min-height: auto; /* Change from height to auto */
-        padding: 20px;
-    }
-    
-    .container {
-        width: 100%;
-    }
-    
-    .button-container {
-        width: 100%;
-    }
-    
-    .button {
-        width: 90%; /* Adjust button width for mobile */
-    }
-    
-    .footer {
-        position: relative; /* Change to relative for better mobile positioning */
-        padding: 15px;
-    }
 }
