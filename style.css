@@ -1,34 +1,63 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micheal Site</title>
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        .social-icon {
-            width: 24px; /* Adjust the width */
-            height: 24px; /* Adjust the height */
-        }
-    </style>
-</head>
-<body style="background-color:rgb(37,37,38);">
-    <div class="container">
-        <img src="https://github.com/Castawhat/micheal.site-backend/blob/main/PFP-removebg-preview.png?raw=true" alt="Logo" class="logo">
-        <h1>Josh</h1>
-        <p class="description">Welcome to my tiny site. Here, you'll find info about my projects, interests, and more.</p>
-        <p class="description">Most projects will most likely be uploaded to GitHub.</p>
-        <div class="button-container">
-            <!-- Buttons - Copy and paste for more!-->
-            <button class="button" onclick="navigateTo('https://github.com/Castawhat');">GitHub</button>
-            <button class="button" onclick="navigateTo('https://github.com/Castawhat/photoshop-creations');">Photoshop Work</button>
-            <button class="button" onclick="navigateTo('https://ontopofyourcake.poxi.io/');">Old Site (On Poxi.io)</button>
-        </div>
-    </div>
-    
-    <div class="footer">
-        <p>Made with <3 by Josh. Last updated 24-04-2025. Now written by me, not ChatGPT, I learnt to code! Contact: castawaypalmtree@gmail.com </p>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #d3d3d3; /* Updated to white-grey */
+    flex-direction: column; /* Allows footer to be positioned correctly */
+}
+
+.container {
+    text-align: center;
+    color: #d3d3d3; /* Updated to white-grey */
+    margin-bottom: 20px; /* Adjust spacing */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 200px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #d3d3d3; /* Updated to white-grey */
+}
+
+p {
+    color: #d3d3d3; /* Updated to white-grey */
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #d3d3d3; /* Updated to white-grey */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #d3d3d3; /* Updated to white-grey */
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    width: 400px; /* Set a fixed width for even size */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
